@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+:root{
+  --cta-color: #202f3d; 
+}
+
+.primary-bg-color{
+  background-color: var(--cta-color);
+} 
+.primary-text-color{
+  color: var(--cta-color);
+}
