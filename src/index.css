@@ -8,6 +8,9 @@
 *{
   font-family: var(--font-inter);
 }
+body{
+  overflow-x: hidden;
+}
 
 h1{
   color: theme(--color-gray-900);

@@ -44,9 +44,9 @@ const Home = () => {
     <Section>
       <h2 className="text-4xl font-medium mb-2">Lorem, ipsum.</h2>
       <p className="text-2xl tracking-widest">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eaque id odio.</p>
-      <ul className="flex flex-wrap gap-2 justify-around mt-4">
+      <ul className="flex flex-wrap md:flex-nowrap gap-2 md:gap-0 justify-around mt-4">
         {section1Cards.map((item, index) => {
-          return <li key={index} className="max-w-xs min-w-xs">
+          return <li key={index} className="max-w-xs min-w-xs md:max-w-auto md:min-w-auto">
             <Card shadow={false}>
               {item.image}
               <p>{item.title}</p>
@@ -57,7 +57,7 @@ const Home = () => {
       </ul>
     </Section>
     <Section>
-      <div className="flex flex-row gap-4 flex-wrap items-center justify-center">
+      <div className="flex flex-row gap-4 flex-wrap md:flex-nowrap items-center justify-center">
         <div className="sm:w-sm md:w-lg p-8 flex items-center justify-center">
           <img src={defaultImageSrc} alt="Something"/>
         </div>
