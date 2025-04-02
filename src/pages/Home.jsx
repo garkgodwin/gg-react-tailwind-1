@@ -58,7 +58,7 @@ const Home = () => {
     </Section>
     <Section>
       <div className="flex flex-row gap-4 flex-wrap items-center justify-center">
-        <div className="w-lg p-8 flex items-center justify-center">
+        <div className="sm:w-sm md:w-lg p-8 flex items-center justify-center">
           <img src={defaultImageSrc} alt="Something"/>
         </div>
         <div className="flex flex-col" style={{width: "50%"}}>
