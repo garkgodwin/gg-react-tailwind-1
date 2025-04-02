@@ -35,7 +35,7 @@ const Home = () => {
   }
   return <>
     <HeroSection>
-      <h1 className="text-5xl font-bold mb-4 max-w-lg z-1 primary-text-color">Lorem ipsum dolor sit.</h1>
+      <h1 className="text-5xl font-bold mb-4 max-w-lg z-1 primary-text-color text-center">Lorem ipsum dolor sit.</h1>
       <p className="text-xl tracking-wider mb-2 max-w-lg z-1 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, necessitatibus!</p>
       <Button handleClick={handleCTAClick}>
         Lorem, ipsum.
@@ -43,7 +43,7 @@ const Home = () => {
     </HeroSection>
     <Section>
       <h2 className="text-4xl font-medium mb-2">Lorem, ipsum.</h2>
-      <p className="text-2xl tracking-widest">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eaque id odio.</p>
+      <p className="text-2xl tracking-wider">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eaque id odio.</p>
       <ul className="flex flex-wrap md:flex-nowrap gap-2 md:gap-0 justify-around mt-4">
         {section1Cards.map((item, index) => {
           return <li key={index} className="max-w-xs min-w-xs md:max-w-auto md:min-w-auto">
