@@ -3,11 +3,9 @@ import { NavLink } from "react-router";
 
 const NavbarLink = ({ to, text }) => {
   return (
-    <li className="color-primary">
-      <NavLink to={to} className="text-black">
+      <NavLink to={to}>
         {text}
       </NavLink>
-    </li>
   );
 };
 
