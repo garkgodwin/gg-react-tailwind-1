@@ -67,9 +67,20 @@ const Home = () => {
           <p className="text-xl/8 tracking-wide mt-10 line-">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quam cumque molestiae molestias minima nulla provident non nisi nihil, eveniet optio dolores dolorum totam, ducimus itaque natus. Vero magnam officiis eligendi nihil libero assumenda, earum cumque veniam dignissimos adipisci, ducimus nemo, debitis sequi quisquam? Quod esse amet laudantium voluptatibus eius.
           </p>
+        </div>
+      </div>
+    </Section>
+    <Section>
+      <div className="flex flex-row gap-4 flex-wrap md:flex-nowrap items-center justify-center">
+        <div className="flex flex-col" style={{width: "50%"}}>
+          <h2 className="text-4xl font-medium mb-2">Lorem, ipsum.</h2>
+          <p className="text-2xl tracking-widest">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eaque id odio.</p>
           <p className="text-xl/8 tracking-wide mt-10 line-">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quam cumque molestiae molestias minima nulla provident non nisi nihil, eveniet optio dolores dolorum totam, ducimus itaque natus. Vero magnam officiis eligendi nihil libero assumenda, earum cumque veniam dignissimos adipisci, ducimus nemo, debitis sequi quisquam? Quod esse amet laudantium voluptatibus eius.
           </p>
+        </div>
+        <div className="sm:w-sm md:w-lg p-8 flex items-center justify-center">
+          <img src={defaultImageSrc} alt="Something"/>
         </div>
       </div>
     </Section>
