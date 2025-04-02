@@ -51,14 +51,15 @@ const Navbar = () => {
         md:right-16 
         md:flex bg-white md:bg-inherit transition-[right]
         drop-shadow-md
+        md:drop-shadow-none
         `}>
         <ul className="flex flex-col md:flex-row py-10 md:py-0 md:gap-6 items-center font-normal md:ml-10">
           {navs.map((item, index) => (
-          <li className="flex gap-1 items-center p-4 md:p-0 border-b-2 md:border-b-0 w-100">
+          <li className="flex gap-1 items-center p-4 md:p-0 border-b-2 md:border-b-0 w-100 md:w-auto">
             <NavbarLink key={index} to={item.to} text={item.text} />
           </li>
           ))}
-          <li className="flex gap-1 items-center p-4 md:p-0 border-b-2 md:border-b-0 w-100">
+          <li className="flex gap-1 items-center p-4 md:p-0 border-b-2 md:border-b-0 w-100 md:w-auto">
             <PhoneIcon width={16} />
             <span>{company.phone}</span>
           </li>
