@@ -5,48 +5,50 @@ import Section from "../containers/Section";
 import Card from '../containers/Card'
 import Button from '../components/Button';
 import { FaceSmileIcon as DefaultIcon } from "@heroicons/react/24/solid";
+import company from './../config/company';
 
 const iconWidth = 40;
 const valuesCards = [
   {
     image: <DefaultIcon width={iconWidth} />,
-    title: "Innovation",
-    desc: "We prioritize innovative solutions that drive success."
+    title: "lorem",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
   },
   {
     image: <DefaultIcon width={iconWidth} />,
-    title: "Client-Centric",
-    desc: "Our clients are at the heart of everything we do."
+    title: "Lorem-Lorem",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
   },
   {
     image: <DefaultIcon width={iconWidth} />,
-    title: "Integrity",
-    desc: "We value transparency and honesty in all of our work."
+    title: "Lorem",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
   },
   {
     image: <DefaultIcon width={iconWidth} />,
-    title: "Teamwork",
-    desc: "Collaboration is key to delivering excellent results."
+    title: "Lorem",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
   },
 ];
 
 const AboutPage = () => {
   return <>
     <HeroSection>
-      <h1 className="text-5xl font-bold mb-4 max-w-lg z-1 primary-text-color text-center">About Ascendant Digital Solutions</h1>
-      <p className="text-xl tracking-wider mb-2 max-w-lg z-1 text-center">We're a team passionate about helping businesses grow through digital transformation.</p>
+      <h1 className="text-5xl font-bold mb-4 max-w-lg z-1 primary-text-color text-center">About {company.name}</h1>
+      <p className="text-xl tracking-wider mb-2 max-w-lg z-1 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsa odio provident sequi delectus obcaecati ea consectetur voluptas explicabo libero!</p>
       <Button>
-        Join Our Team
+        Lorem, ipsum dolor.
       </Button>
     </HeroSection>
+    
 
     <Section>
-      <h2 className="text-4xl font-medium mb-2">Who We Are</h2>
-      <p className="text-2xl tracking-wider text-center">At Ascendant Digital Solutions, we specialize in creating cutting-edge software and web experiences. With a team of passionate developers and designers, we focus on helping businesses grow through digital transformation.</p>
+      <h2 className="text-4xl font-medium mb-2">Lorem, ipsum dolor.</h2>
+      <p className="text-2xl tracking-wider text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus explicabo vel autem, deserunt ex accusamus quod quidem perferendis facere, pariatur voluptatibus neque, quaerat distinctio illo!</p>
     </Section>
 
     <Section>
-      <h2 className="text-4xl font-medium mb-2">Our Values</h2>
+      <h2 className="text-4xl font-medium mb-2">Lorem, ipsum.</h2>
       <ul className="flex flex-wrap md:flex-nowrap gap-2 md:gap-0 justify-around mt-4">
         {valuesCards.map((item, index) => (
           <li key={index} className="max-w-xs min-w-xs md:max-w-auto md:min-w-auto">
@@ -66,10 +68,10 @@ const AboutPage = () => {
           <img src={defaultImageSrc} alt="Team"/>
         </div>
         <div className="flex flex-col" style={{width: "50%"}}>
-          <h2 className="text-4xl font-medium mb-2">Our Team</h2>
-          <p className="text-2xl tracking-widest">Meet the team that drives innovation and excellence at Ascendant Digital Solutions.</p>
+          <h2 className="text-4xl font-medium mb-2">Lorem, ipsum.</h2>
+          <p className="text-2xl tracking-widest">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus!</p>
           <p className="text-xl tracking-wide mt-10">
-            Our team is composed of talented professionals who are committed to creating digital experiences that transform businesses. We work collaboratively to deliver tailored solutions that meet our clients’ needs.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequuntur odit ex repudiandae quae excepturi magni necessitatibus sunt natus aperiam.
           </p>
         </div>
       </div>
