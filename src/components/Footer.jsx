@@ -14,7 +14,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-1">About {company.name}</h3>
             <p className="text-sm">
               {company.description} <br />
-              <a href="mailto:info@company.com" className="text-teal-400">info@company.com</a>
+              <a href="mailto:info@company.com" className="text-teal-400">{company.email}</a>
             </p>
           </div>
 
