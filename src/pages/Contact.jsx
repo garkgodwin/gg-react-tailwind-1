@@ -4,6 +4,7 @@ import Section from "../containers/Section";
 import Card from "../containers/Card";
 import Button from "../components/Button";
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from "@heroicons/react/24/solid";
+import company from './../config/company';
 
 const iconWidth = 40;
 
@@ -11,17 +12,17 @@ const contactDetails = [
   {
     icon: <EnvelopeIcon width={iconWidth} />,
     title: "Email Us",
-    desc: "info@lorem20.com"
+    desc: company.email
   },
   {
     icon: <PhoneIcon width={iconWidth} />,
     title: "Call Us",
-    desc: "+63 991 505 8720"
+    desc: company.phone
   },
   {
     icon: <MapPinIcon width={iconWidth} />,
     title: "Visit Us",
-    desc: "123 Digital Lane, Tech City, Philippines"
+    desc: company.address
   }
 ];
 
