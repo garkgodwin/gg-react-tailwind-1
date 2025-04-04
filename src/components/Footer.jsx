@@ -1,6 +1,6 @@
 import React from "react";
-import LinkedIcon from "../assets/in-logo/in-logo/LI-In-Bug.png"
-import GithubIcon from "../assets/github_logos/PNG/GitHub_Invertocat_Dark.png"
+import LinkedIcon from "../assets/in-logo/in-logo/LI-In-Bug.png";
+import GithubIcon from "../assets/github_logos/PNG/GitHub_Invertocat_Dark.png";
 import company from "../config/company";
 import { NavLink } from "react-router";
 
@@ -42,10 +42,10 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex gap-4">
               <a href="https://www.linkedin.com/in/garkgodwin/" target="_blank" rel="noopener noreferrer" className="w-auto">
-                <img src={LinkedIcon} arc="Linked In" className="w-[24px]"/>
+                <img src={LinkedIcon} alt="LinkedIn" className="w-[24px]" />
               </a>
               <a href="https://github.com/garkgodwin" target="_blank" rel="noopener noreferrer" className="w-auto">
-                <img src={GithubIcon} arc="Github" className="w-[24px]"/>
+                <img src={GithubIcon} alt="Github" className="w-[24px]" />
               </a>
             </div>
           </div>
@@ -54,6 +54,11 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="mt-8 text-center text-sm text-gray-400">
           <p>&copy; {new Date().getFullYear()} {company.name}. All Rights Reserved.</p>
+          <div className="mt-2 space-x-4">
+            <NavLink to="/terms" className="hover:text-teal-400">Terms & Conditions</NavLink>
+            <span>|</span>
+            <NavLink to="/privacy-policy" className="hover:text-teal-400">Privacy Policy</NavLink>
+          </div>
         </div>
       </div>
     </footer>
