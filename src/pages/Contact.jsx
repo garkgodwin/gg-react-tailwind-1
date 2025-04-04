@@ -56,27 +56,27 @@ const ContactPage = () => {
 
       <Section id="contact-form">
         <h2 className="text-4xl font-medium mb-4 text-center">Send Us a Message</h2>
-        <form className="flex flex-col justify-center items-center gap-4">
+        <form className="flex flex-col justify-center sm:items-center gap-4">
           <input
             type="text"
             placeholder="Your Name"
-            className="w-md-100 w-50 p-3 rounded-md border border-gray-300"
+            className="md:w-100 sm:w-75 w-auto p-3 rounded-md border border-gray-300"
             required
           />
           <input
             type="email"
             placeholder="Your Email"
-            className="w-md-100 w-50 p-3 rounded-md border border-gray-300"
+            className="md:w-100 sm:w-75 w-auto p-3 rounded-md border border-gray-300"
             required
           />
           <textarea
             rows="6"
             placeholder="Your Message"
-            className="w-md-100 w-50 p-3 rounded-md border border-gray-300 resize-none"
+            className="md:w-100 sm:w-75 w-auto p-3 rounded-md border border-gray-300 resize-none"
             required
           />
-          <div className="text-center">
-            <Button type="submit" className="w-md-100 w-50">Submit</Button>
+          <div className="text-center flex items-center justify-center">
+            <Button type="submit" className="md:-100 sm:w-75 w-auto">Submit</Button>
           </div>
         </form>
       </Section>
