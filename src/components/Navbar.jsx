@@ -46,20 +46,20 @@ const Navbar = () => {
       </button>
 
       {/* Navbar links */}
-      <nav className={`absolute top-[90px] md:top-auto w-100 md:w-auto h-100 md:h-auto 
-        ${menuOpen ? "-right-0": "-right-[100%]"} 
+      <nav className={`absolute top-[90px] md:top-auto md:w-auto px-4 h-100 md:h-auto 
+        ${menuOpen ? "right-0": "-right-100"} 
         md:right-16 
-        md:flex bg-white md:bg-inherit transition-[right]
+        md:flex bg-white md:bg-inherit transition-all
         drop-shadow-md
         md:drop-shadow-none
         `}>
         <ul className="flex flex-col md:flex-row py-10 md:py-0 md:gap-6 items-center font-normal md:ml-10">
           {navs.map((item, index) => (
-          <li className="flex gap-1 items-center p-4 md:p-0 border-b-2 md:border-b-0 w-100 md:w-auto">
+          <li className="flex gap-1 items-center p-4 md:p-0 border-b-2 md:border-b-0 w-[240px] md:w-auto">
             <NavbarLink key={index} to={item.to} text={item.text} />
           </li>
           ))}
-          <li className="flex gap-1 items-center p-4 md:p-0 border-b-2 md:border-b-0 w-100 md:w-auto">
+          <li className="flex gap-1 items-center p-4 md:p-0 border-b-2 md:border-b-0 w-[240px] md:w-auto">
             <PhoneIcon width={16} />
             <span>{company.phone}</span>
           </li>
