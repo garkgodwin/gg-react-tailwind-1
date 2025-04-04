@@ -3,6 +3,7 @@ import Page from "./../containers/Page";
 import { Routes, Route } from "react-router";
 import Home from "./../pages/Home";
 import About from './../pages/About'
+import Services from './../pages/Services'
 import NotFound from './../pages/NotFound'
 const AppRoutes = () => {
   return (
@@ -10,6 +11,7 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Page>
