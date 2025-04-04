@@ -3,11 +3,13 @@ import NavbarLink from "./NavbarLink";
 import { PhoneIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import NavbarBrand from "./NavbarBrand";
 import company from "../config/company";
+import Button from "./Button";
 
 const navs = [
   { to: "/", text: "Home" },
   { to: "/about", text: "About" },
   { to: "/services", text: "Services" },
+  { to: "/pricing", text: "Pricing" },
   { to: "/contact", text: "Contact" },
 ];
 
@@ -31,6 +33,7 @@ const Navbar = () => {
         scrolling ? "bg-white shadow-md py-3" : "bg-transparent py-5"
       }`}
     >
+      <div className="flex gap-24 w-[100%] justify-between">
       <NavbarBrand />
 
       {/* Mobile menu toggle */}
@@ -46,7 +49,7 @@ const Navbar = () => {
       </button>
 
       {/* Navbar links */}
-      <nav className={`absolute top-[90px] md:top-auto md:w-auto px-4 h-100 md:h-auto 
+      <nav className={`md:relative absolute top-[90px] md:top-auto px-4 h-100 md:h-auto 
         ${menuOpen ? "right-0": "-right-100"} 
         md:right-16 
         md:flex bg-white md:bg-inherit transition-all
@@ -54,17 +57,18 @@ const Navbar = () => {
         md:drop-shadow-none
         `}>
         <ul className="flex flex-col md:flex-row py-10 md:py-0 md:gap-6 items-center font-normal md:ml-10">
-          {navs.map((item, index) => (
-          <li className="flex gap-1 items-center p-4 md:p-0 border-b-2 md:border-b-0 w-[240px] md:w-auto">
-            <NavbarLink key={index} to={item.to} text={item.text} />
-          </li>
-          ))}
-          <li className="flex gap-1 items-center p-4 md:p-0 border-b-2 md:border-b-0 w-[240px] md:w-auto">
-            <PhoneIcon width={16} />
-            <span>{company.phone}</span>
-          </li>
+          {navs.map((item, index) => {
+            return index !== 4 ? <li className="flex gap-1 items-center p-4 md:p-0 border-b-2 md:border-b-0 w-[240px] md:w-auto">
+                        <NavbarLink key={index} to={item.to} text={item.text} />
+                      </li> : null
+            })}
         </ul>
       </nav>
+        
+      </div>
+        <Button className="hidden md:block min-w-[120px]">
+          Contact Us
+        </Button>
     </header>
   );
 };
