@@ -11,12 +11,12 @@ const contactDetails = [
   {
     icon: <EnvelopeIcon width={iconWidth} />,
     title: "Email Us",
-    desc: "info@ascendantdigitalsolutions.com"
+    desc: "info@lorem20.com"
   },
   {
     icon: <PhoneIcon width={iconWidth} />,
     title: "Call Us",
-    desc: "+63 912 345 6789"
+    desc: "+63 991 505 8720"
   },
   {
     icon: <MapPinIcon width={iconWidth} />,
@@ -43,7 +43,7 @@ const ContactPage = () => {
         </p>
         <ul className="flex flex-wrap md:flex-nowrap gap-4 justify-center mt-6">
           {contactDetails.map((detail, index) => (
-            <li key={index} className="max-w-xs">
+            <li key={index} className="max-w-xs w-[200px]">
               <Card shadow={false}>
                 {detail.icon}
                 <p className="text-xl font-semibold">{detail.title}</p>
